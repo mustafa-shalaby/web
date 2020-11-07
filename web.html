@@ -1,0 +1,586 @@
+
+<!DOCTYPE html>
+<!DOCTYPE css>
+<html>
+
+
+
+<head>
+<title>Shalaby Web</title>
+<link rel = "icon" href ="Netflix.png" type = "image/png"> 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<meta name="description" content="shalaby"> 
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+</head>
+
+<body >
+<div align="center">
+    <a  href="http://www.google.com" target="_top" >
+    	<img src="s.gif" alt="not loaded" style="max-width: 100%;height: auto;">
+    </a>    
+</div> 
+
+<hr>
+             
+
+<br>
+
+<style >
+
+	*{box-sizing: border-box;}
+
+	body{background-color: white;font-family: verdana ;margin: 0;}
+
+    header{background-color: black;color: blue;font-size: 5vw; padding: 15px ;text-align: center;}
+    footer{background-color: black;color: blue;opacity: 0.9;font-size: 5vw; padding: 15px ;text-align: center;}
+
+    nav{float: left; background-color: darkcyan; width:10% ;height: 300px;padding: 5px }
+    nav ul {list-style-type: none; padding: 0;}
+    article{background-color: crimson;width:100% ; height: 300px ;padding: 25px;}
+    aside{float: left;background-color: tomato; width:12% ;height: 300px;padding-left: : 5px;float: right;}
+    section:after{clear: both;content:"": none;display: table;}
+
+   ul{list-style-type: none;
+   	padding: 0;
+   	margin: 0 ;
+   	background-color: black;
+   	overflow: hidden;
+   	position: fixed;
+   	top: 0;
+   	box-shadow: 5px 5px 40px grey;}
+
+   li {float: left;font-size: 1.5vw}
+
+   li a{display: block;color: white;padding: 1.5vw 3vw ;text-decoration: none;text-align: center;}
+  
+   li a.active{background-color: crimson}
+   li a:hover {background-color: pink;opacity: 0.8}
+
+   #about{background-color: darkcyan;float: right}
+ 
+
+   video{width: 700px;height: 500px}
+   video:hover{opacity: 0.7}
+
+
+ #inp [type=text] {
+  width: 170px;
+  color: tomato;
+  border: 2px solid orange;
+  border-radius: 10px;
+  font-size: 1.5vw;
+  background-color: white;
+  background-image: url('./f.png');
+  transition: width 1s ease-in-out;
+  background-position: 5px 2px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 10px 60px;
+  animation-name: e;
+  animation-duration:3s;
+  animation-iteration-count:10; 
+}
+ #inp [type=text]:focus {
+  border-color: darkgreen;
+  width: 60%;
+} 
+
+ @keyframes e{0%{border: 2px solid blue;}
+ 25%{border: 2px solid pink;}
+ 50%{border: 2px solid darkcyan;}
+ 75%{border: 2px solid green;}
+ 100%{border: 2px solid red;}
+}
+  
+
+  h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+
+.hero-image {
+  background: url(a.jpg) no-repeat center; 
+  max-width: 100%;
+  height: 700px;
+}
+
+  	#div2{background-color: green;
+  	border:none;	
+  	border-radius: 25px;
+  	width: 100px;
+  	height: 50px;
+  	font-size: 18px;
+  	color: white;
+  	box-shadow: 5px 5px 80px black;
+  	text-align: center;
+  	animation: ex 3s ease-in-out infinite; 
+    position: relative;}
+
+  	@keyframes ex{0%{background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  35%  {background-color:yellow; left:400px; top:0px;}
+  50%  {background-color:blue; left:0px; top:px;}
+  75%  {background-color:green; left:200px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+              }
+
+
+.tooltip{position: relative;}
+
+.tooltip .tooltipext{
+ 	visibility: hidden;
+ 	width: 190px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 9px;
+    padding: 5px ;
+
+ }
+
+ .tooltip:hover .tooltipext{visibility: visible;}
+
+
+.sd{border:1px solid black;
+	object-fit: fill;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
+    padding: 5px;
+}
+
+.pagination{display: inline-block;
+}
+
+.pagination a{color: black;
+	background-color: white; 
+	float: left;
+	border-radius: 7px;
+	text-decoration: none;
+	font-size: 2vw;
+	padding: 8px 16px;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.pagination a:hover{background-color: #ddd; 
+}
+
+.pagination a.active {
+  background-color: tomato;
+  color: white;
+}
+
+
+
+
+.nav1{background-color: black;overflow: hidden;}
+
+.nav1 a{
+	color: white;
+	text-align: center;
+	float: left;
+	text-decoration: none;
+	padding: 15px 15px;
+	display: block;
+}
+ 	
+.nav1 a:hover {
+  background-color: grey;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .nav1 a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+ .row{
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	padding:  0 1px
+  margin-top: 100px; 
+ }
+
+ .column {
+  flex: 25%;
+  max-width: 85%;
+  padding: 0 1px;
+}
+
+ .column img {
+ 	margin-top: 1px; 
+
+ }
+ .column img:hover{opacity: 0.7}
+
+ @media screen and (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 70%;
+  }
+}
+
+
+ @media screen and(max-width: 600px){
+ 	.column{
+ 		flex: 100%;
+ 		max-width: 100%;
+ 	}
+ }
+
+
+ #s{
+ 	background-color: green;
+ 	text-align: center;
+ 	padding: 7px;
+ 	border-radius: 8px;
+ 	margin: 10px;
+ 	box-shadow: 10px 10px 70px black;
+ }
+
+
+
+</style>
+
+<h2>CSS Layout Float</h2>
+<p style="text-transform: capitalize;text-shadow: 1px 1px 2px black;color: white"> In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p style="text-shadow: 1px 1px 10px cyan;color: darkcyan;overflow:"> Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+
+<header>MY Penis</header>
+
+
+<section >
+	<nav>
+		<ul style="font-size: 2vw">
+			<li >Chicago</li>
+			<li>New york</li>
+			<li>texas</li>
+		</ul>
+	</nav>
+
+	<aside style="font-size: 2vw">
+		<p> Standing on the River Thames, London has been</p>
+	</aside>
+
+	<article>
+		 <h1>London</h1>
+         <p style="font-size: 2vw;ov">London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+         <p style="font-size: 2vw">Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+	</article>
+</section>
+
+
+<footer>vagina</footer>
+<br>
+
+
+
+
+<div align="center">
+<video controls draggable="true">
+	<source src="My Video3.mp4" type="video/mp4">
+</video>
+</div>
+
+<br>
+
+
+<ul>
+	<li><a class="active">Home</a></li>
+	<li><a href="http://www.google.com">Google</a></li>
+	<li><a href="http://www.facebook.com">Facebook</a></li>
+	<li><a href="http://www.instagram.com">Instagram</a></li>
+  <li><a href="2.html">Next Page</a></li>
+	<li id="about"><a>about</a></li>
+</ul>
+
+<br>
+
+<form>
+  <input id="inp" type="text" name="search" placeholder="Search..">
+</form>
+
+<form>
+  <input id="inp" type="text" name="search" placeholder="Search..">
+</form>
+
+
+
+ <br>
+ <input type="button" id="div2" name="My Ass" value="My Ass">
+ <br>
+  
+ <br>
+ <div class="tooltip">Hold on <span class="tooltipext">tooltip mother fucker</span>
+ </div>
+ <br>
+
+ <div align="center">
+ <div class="pagination" >
+ 	<a href="#">&laquo;</a>
+ 	<a href="video">1</a>
+ 	<a href="#" class="active">2</a>
+ 	<a href="web - Copy.html" >3</a>
+ 	<a href="#">4</a>
+ 	<a href="#">5</a>
+ 	<a href="#">6</a>
+ 	<a href="#">7</a>
+ 	<a href="#">&raquo;</a>
+  </div>
+  </div>
+
+<br>
+
+<div class="nav1">
+  <a href="#">Ass</a>
+  <a href="#">Dick</a>
+  <a href="#">penis</a>
+  <a href="#">cock</a>
+</div>
+
+<br>
+  
+  <div class="row">
+  	<div class="column">
+  		<img src="i/1.jpg" style="width: 100%">
+  		<img src="i/2.jpg" style="width: 100%">
+  		<img src="i/3.jpg" style="width: 100%">
+  		<img src="i/4.jpg" style="width: 100%">
+  		<img src="i/5.jpg" style="width: 100%">
+      <img src="i/6.jpg" style="width: 100%">
+      <img src="i/7.jpg" style="width: 100%">
+      <img src="i/8.jpg" style="width: 100%">
+      <img src="i/9.jpg" style="width: 100%">
+       <img src="i/10.jpg" style="width: 100%">
+      <img src="i/11.jpg" style="width: 100%">
+      <img src="i/6.jpg" style="width: 100%">
+      <img src="i/40.jpg" style="width: 100%">
+
+      
+
+  		
+  	</div>
+  	
+  	<div class="column">
+  		<img src="i/14.jpg" style="width: 100%">
+  		<img src="i/15.jpg" style="width: 100%">
+  		<img src="i/16.jpg" style="width: 100%">
+  		<img src="i/17.jpg" style="width: 100%">
+  		<img src="i/18.jpg" style="width: 100%">
+      <img src="i/19.jpg" style="width: 100%">
+      <img src="i/20.jpg" style="width: 100%">
+      <img src="i/21.jpg" style="width: 100%">
+      <img src="i/22.jpg" style="width: 100%">
+      <img src="i/23.jpg" style="width: 100%">
+      <img src="i/24.jpg" style="width: 100%">
+      <img src="i/25.jpg" style="width: 100%">
+      <img src="i/26.jpg" style="width: 100%">
+      <img src="i/39.jpg" style="width: 100%">
+      <img src="i/47.jpg" style="width: 100%">
+  		
+  	</div>
+
+  	<div class="column">
+  		<img src="i/27.jpg" style="width: 100%">
+  		<img src="i/28.jpg" style="width: 100%">
+  		<img src="i/29.jpg" style="width: 100%">
+  		<img src="i/30.jpg" style="width: 100%">
+  		<img src="i/31.jpg" style="width: 100%">
+      <img src="i/32.jpg" style="width: 100%">
+      <img src="i/33.jpg" style="width: 100%">
+      <img src="i/60.jpg" style="width: 100%">
+      <img src="i/35.jpg" style="width: 100%">
+      <img src="i/36.jpg" style="width: 100%">
+      <img src="i/37.jpg" style="width: 100%">
+      <img src="i/38.jpg" style="width: 100%">
+      <img src="i/39.jpg" style="width: 100%">
+       <img src="i/51.jpg" style="width: 100%">
+      <img src="i/52.jpg" style="width: 100%">
+  		
+  	</div>
+
+  	<div class="column">
+  		<img src="i/38.jpg" style="width: 100%">
+  	  <img src="i/44.jpg" style="width: 100%">
+  		<img src="i/41.jpg" style="width: 100%">
+  		<img src="i/42.jpg" style="width: 100%">
+      <img src="i/43.jpg" style="width: 100%">
+      <img src="i/44.jpg" style="width: 100%">
+      <img src="i/45.jpg" style="width: 100%">
+      <img src="i/60.jpg" style="width: 100%">
+      <img src="i/47.jpg" style="width: 100%">
+      <img src="i/48.jpg" style="width: 100%">
+      <img src="i/49.jpg" style="width: 100%">
+      <img src="i/50.jpg" style="width: 100%">
+      <img src="i/51.jpg" style="width: 100%">
+      <img src="i/52.jpg" style="width: 100%">
+  		
+  	</div>
+
+
+  </div>
+
+
+
+
+<br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide();
+  });
+});
+</script>
+
+<body>
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Click me</button>
+<br>
+
+<div onmouseover="mover(this)" onmouseout="mout(this)"><h1 id="1"  align="center">over motherfucker</h1>
+</div>
+
+<h1  align="center" onclick="change(this)">Click on motherfucker</h1>
+
+
+
+
+<button onclick="clickButton()">Click me!</button>
+
+<p id="demo"></p>
+
+<p>Try changing the table property from "customers" to "products".</p>
+
+<script>
+function clickButton() {
+  var obj, s
+  obj = { table: "customers", limit: 10 };
+  s = document.createElement("script");
+  s.src = "jsonp_demo_db.php?x=" + JSON.stringify(obj);
+  document.body.appendChild(s);
+}
+
+function myFunc(myObj) {
+  var x, txt = "";
+  for (x in myObj) {
+    txt += myObj[x].name + "<br>";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+
+<br>
+
+ <script>
+window.onload = function() {
+  var element = document.createElement("script");
+  element.src = "script.js";
+  document.body.appendChild(element);
+};
+</script> 
+
+<button onclick="myFunction()">Try it</button>
+<p id="dem"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  var person = prompt("Please enter your name:", "Harry Potter");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+<script src="script.js"></script>
+<p id="dee">Try to change your penis</p>
+<p id="dd"></p>
+<p id="rr">penis</p>
+<p id="rrr"></p>
+
+
+<button type="button" onclick="myfunc()">scale</button>
+<button type="button" onclick="myfunc1()">hide</button>
+<button type="button" onclick="myfunc2()">show</button>
+<button type="button" onclick="myfunc3()">change</button>
+
+<button type="button" onclick="window.print()">print</button>
+<button type="button" onclick="window.history.forward()" value="Forward">history</button>
+<button onclick="display()">date</button>
+<button id="ee">date by box</button>
+<button onclick="fun1()">funct</button>
+
+<script>
+   document.getElementById("rrr").innerHTML=navigator.product;
+
+  document.getElementById("ee").addEventListener("click",function display1(){
+    alert(Date());
+  });
+
+  function mover(obj){
+    document.getElementById("1").innerHTML="Science Bitch !!!!";
+  }
+
+  function mout(obj){
+    document.getElementById("1").innerHTML="over motherfucker";
+  }
+
+  function change(id){
+    id.innerHTML="Science Bitch !!!! ";
+  }
+  function display(){
+    document.getElementById('rrr').innerHTML+=Date()+"<br>";
+  }
+  
+  
+  function fun1(){
+  var fruits, text, Len, i;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+Len = fruits.length;
+
+text = "";
+for (i = 0; i < Len; i++) {
+  text +=fruits[i] + "<br>";
+}
+
+
+document.getElementById("rrr").innerHTML = text;
+}
+ 
+</script>
+
+
+
+<br>
+
+ 
+ <div  align="center">
+ <img class="sd" src="v.jpg">
+ </div>
+
+
+
+ <div class="hero-image" ></div>
+
+
+</body>
+</div>
+</html>
